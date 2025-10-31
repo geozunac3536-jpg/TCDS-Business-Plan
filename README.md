@@ -25,3 +25,6 @@ Contacto: **Genaro Carrasco Ozuna** · ORCID 0009-0005-6358-9910 · <geozunac353
 📘 Dossier científico: [Conciencia_operativa.pdf](./Conciencia_operativa.pdf)
 📊 Plan de Negocios Global TCDS-Σ 2026–2030 — [descargar](./docs/PROYECTO%20TCDS%20IA_2025-10-30_193913_251030_193928.pdf)
 🧾 Declaración de Autonomía y Propiedad Intelectual — [ver documento](./DECLARACION_AUTONOMIA.pdf)
+🧩 Reproducibilidad científica:
+- [dossier_conciencia_tcds.tex](./docs/dossier_conciencia_tcds.tex) — código fuente LaTeX auditable.
+- [Conciencia_operativa.pdf](./docs/Conciencia_operativa.pdf) — versión compilada.
