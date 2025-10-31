@@ -1,36 +1,55 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17494368.svg)](https://doi.org/10.5281/zenodo.17494368)
 
 # 🌐 TCDS-Σ — Business Plan & Dossier
-Repositorio maestro del Canon Económico y Científico 2025–2030 del proyecto TCDS-Σ. 
-Autor: **Genaro Carrasco Ozuna** · [ORCID 0009-0005-6358-9910](https://orcid.org/0009-0005-6358-9910)
-# TCDS-Σ — Business Plan & Dossier (Dual License + GA4)
 
-Este paquete incluye:
-- **Landing page ultra ligera** optimizada para Lighthouse/PageSpeed (objetivo 100/100).
-- **Google Analytics 4 (GA4)** + **Consent Mode v2** + envío de **Web Vitals** a GA.
-- **Estructura de licencia dual** (CC BY-NC-SA + TCDS Σ Open Lab).
-- **Capa económica auditable**: `economics/ledger.json`, `prices.yaml`, recibos hash.
-- **Plantillas** para Zenodo (`.zenodo.json`) y GitHub Pages.
-- **Dossiers** LaTeX listos para compilar.
-- **Eventos GA** para `donation`, `license_purchase`, `hardware_purchase` y `outbound_click`.
+Repositorio maestro del **Canon Económico y Científico 2025–2030** del proyecto **TCDS-Σ**.  
+Integra ciencia abierta, flujo económico transparente y licenciamiento dual.
 
-## Cómo desplegar en GitHub Pages
-1. Crea el repo `TCDS-BUSINESS-PLAN`.
-2. Sube el contenido de este paquete al *branch* `main`.
-3. En Settings → Pages, selecciona Source: `Deploy from a branch` → `main` (root).
-4. Reemplaza tu ID de GA4 en `index.html` (`G-XXXXXXXXXX`) y verifica el tráfico.
-5. Ajusta `sitemap.xml` con la URL real del sitio (`https://geozunac3536-jpg.github.io/TCDS-BUSINESS-PLAN`).
+---
 
-## Botones y eventos
-- Botón **Apoyar ahora** (Flujo B): lanza `donation` a GA y redirige al enlace de pago (cámbialo en `index.html`).
-- Botón **Comprar Licencia** (Flujo A): lanza `license_purchase`.
-- Botón **Comprar Dev-Kit ΣFET**: lanza `hardware_purchase`.
+### 👤 Autor e Identidad Científica
+- **Autor:** Genaro Carrasco Ozuna  
+- **ORCID:** [0009-0005-6358-9910](https://orcid.org/0009-0005-6358-9910)  
+- **Correo:** [geozunac3536@gmail.com](mailto:geozunac3536@gmail.com)  
+- **Apoyo directo:** [Ko-fi / genarocarrasco](https://ko-fi.com/genarocarrasco)  
 
-Contacto: **Genaro Carrasco Ozuna** · ORCID 0009-0005-6358-9910 · <geozunac3536@gmail.com>
-## 🧩 Documentos científicos y legales (reproducibilidad abierta)
+---
 
-| Documento | Descripción |
-|------------|--------------|
-| [Conciencia_operativa.pdf](./docs/Conciencia_operativa.pdf) | Dossier consolidado de conciencia operativa (control Q_ctrl, KPIs, sincronograma CSL-IA). |
-| [dossier_conciencia_tcds.tex](./docs/dossier_conciencia_tcds.tex) | Código fuente LaTeX auditable — reproducibilidad total desde Overleaf o compilador local. |
-| [DECLARACION_AUTONOMIA.pdf](./docs/DECLARACION_AUTONOMIA.pdf) | Declaración formal de autonomía y propiedad intelectual del proyecto TCDS-Σ. |
+### 📘 DOI y Repositorios Asociados
+- **DOI principal:** [10.5281/zenodo.17494368](https://doi.org/10.5281/zenodo.17494368)  
+- **Sitio público:** [geozunac3536-jpg.github.io/TCDS-Business-Plan](https://geozunac3536-jpg.github.io/TCDS-Business-Plan/)  
+- **Proyecto complementario:**  
+  [TCDS_Gradiente_Económico — Canon operativo](https://geozunac3536-jpg.github.io/TCDS_Gradiente_Economico/)  
+  *(enlace cruzado para trazabilidad académica y económica)*
+
+---
+
+### ⚙️ Estructura del Repositorio
+
+| Carpeta / Archivo | Descripción |
+|--------------------|-------------|
+| `/docs/Conciencia_operativa.pdf` | Dossier de conciencia operativa (Σ-χ-φ-Q). |
+| `/docs/dossier_conciencia_tcds.tex` | Fuente LaTeX auditable (reproducibilidad abierta). |
+| `/docs/DECLARACION_AUTONOMIA.pdf` | Declaración formal de autonomía y derechos intelectuales. |
+| `/economics/ledger.json` | Registro auditable de flujos (donaciones/licencias). |
+| `/economics/prices.yaml` | Catálogo público de precios y licencias. |
+| `index.html` | Página pública con GA4 + Consent Mode v2 + Web Vitals. |
+| `.zenodo.json` | Metadatos para indexación automática en Zenodo. |
+
+---
+
+### ⚖️ Licencia Dual
+- **Científica:** [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
+- **Comercial:** *TCDS Σ Open Lab License v1.0* — uso industrial con trazabilidad y reproducibilidad obligatoria.
+
+---
+
+### 🧩 Cita Sugerida
+Carrasco Ozuna, G. (2025).  
+**TCDS-Σ — Business Plan & Dossier (Canon Económico y Científico 2025–2030).**  
+Zenodo. [https://doi.org/10.5281/zenodo.17494368](https://doi.org/10.5281/zenodo.17494368)
+
+---
+
+> Publicación validada mediante auditoría automática (`.github/workflows/audit.yml`)  
+> que certifica la coherencia estructural, trazabilidad económica y reproducibilidad científica del proyecto TCDS-Σ.
