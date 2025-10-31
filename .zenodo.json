@@ -1,11 +1,6 @@
 {
   "title": "TCDS-Σ Business Plan & Dossier (Dual License, GA4, Web Vitals)",
-  "creators": [
-    {
-      "name": "Genaro Carrasco Ozuna",
-      "orcid": "https://orcid.org/0009-0005-6358-9910"
-    }
-  ],
+  "creators": [{"name": "Genaro Carrasco Ozuna", "orcid": "https://orcid.org/0009-0005-6358-9910"}],
   "description": "Plan TCDS-Σ con licencia dual, flujo honesto + decoroso, GA4 + Consent Mode, Web Vitals y contabilidad pública.",
   "license": "CC-BY-NC-SA-4.0",
   "keywords": ["TCDS", "ΣFET", "CSL-IA", "Coherence", "Business Plan", "Web Vitals"],
