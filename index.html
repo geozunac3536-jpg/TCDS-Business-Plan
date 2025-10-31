@@ -1,121 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TCDS-Σ — Business Plan & Dossier</title>
-<meta name="description" content="Plan de negocios técnico-científico TCDS-Σ con licencia dual, flujo honesto y capa económica decorosa.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecto TCDS-Σ — Plan de Negocios Técnico-Científico 2025–2030. Flujo económico honesto y reproducible.">
+  <title>TCDS-Σ — Business Plan & Dossier</title>
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/166396935?s=200">
 
-<!-- URLS CORREGIDAS (respetando mayúsculas del repo) -->
-<link rel="canonical" href="https://geozunac3536-jpg.github.io/TCDS-Business-Plan/">
-<meta property="og:title" content="TCDS-Σ — Business Plan & Dossier">
-<meta property="og:description" content="Licencia dual, flujo honesto, GA4+Consent Mode, Web Vitals a GA.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://geozunac3536-jpg.github.io/TCDS-Business-Plan/">
-<meta name="theme-color" content="#ffffff">
+  <!-- JSON-LD con DOI y metadatos -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "TCDS-Σ — Business Plan & Dossier (Canon Económico y Científico 2025–2030)",
+    "url": "https://geozunac3536-jpg.github.io/TCDS-Business-Plan/",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.17494368"
+    },
+    "license": [
+      "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "https://geozunac3536-jpg.github.io/TCDS-Business-Plan/LICENSE_COMMERCIAL.md"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Genaro Carrasco Ozuna",
+      "email": "geozunac3536@gmail.com",
+      "identifier": "https://orcid.org/0009-0005-6358-9910",
+      "affiliation": {"@type": "Organization","name": "Proyecto TCDS-Σ"}
+    },
+    "publisher": {"@type": "Organization","name": "Zenodo / CERN OpenAIRE"},
+    "datePublished": "2025-10-31",
+    "keywords": ["TCDS","ΣFET","CSL-IA","Coherencia Σ","Open Science","Open Economy","Business Plan","Web Vitals"],
+    "description": "Plan técnico-científico y económico del proyecto TCDS-Σ, con flujo dual honesto/decoroso, licenciamiento abierto y reproducibilidad completa."
+  }
+  </script>
 
-<style>
-  :root { color-scheme: light dark; }
-  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif; line-height:1.5; }
-  header, main, footer { max-width: 840px; margin: auto; padding: 1rem; }
-  header h1 { font-size: clamp(1.5rem, 4vw, 2.2rem); }
-  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
-  .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; }
-  button, a.btn { display:inline-block; padding:.8rem 1rem; border-radius:10px; text-decoration:none; border:1px solid #111; }
-  .small { font-size:.9rem; opacity:.8; }
-  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
-  img { max-width:100%; height:auto; }
-</style>
+  <!-- GA4 + Consent Mode v2 -->
+  <script>
+    (function(){
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'granted',
+        'ad_user_data':'denied',
+        'ad_personalization':'denied'
+      });
+      var s=document.createElement('script');
+      s.async=true;
+      s.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"; /* Sustituir por tu ID real GA4 */
+      document.head.appendChild(s);
+      window.gtag=gtag;
+      gtag('js',new Date());
+      gtag('config','G-XXXXXXXXXX');
+    })();
+  </script>
 
-<!-- JSON-LD corregido: URL con caja exacta -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"TCDS-Σ Project",
-  "url":"https://geozunac3536-jpg.github.io/TCDS-Business-Plan/",
-  "email":"geozunac3536@gmail.com",
-  "founder":{"@type":"Person","name":"Genaro Carrasco Ozuna","identifier":"https://orcid.org/0009-0005-6358-9910"},
-  "sameAs":[ "https://orcid.org/0009-0005-6358-9910" ]
-}
-</script>
+  <style>
+    :root {color-scheme: light dark;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;line-height:1.5;background:#0b0b0b;color:#e0e0e0;}
+    header,main,footer{max-width:900px;margin:auto;padding:1rem;}
+    h1{color:#69d2e7;text-align:center;}
+    h2{color:#aee239;}
+    a{color:#76c7c0;text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+    .card{background:#1a1a1a;border-radius:12px;padding:1rem;box-shadow:0 0 10px #000;}
+    button,a.btn{display:inline-block;padding:.8rem 1rem;border-radius:10px;text-decoration:none;border:1px solid #111;}
+    footer{text-align:center;margin-top:2rem;font-size:.9rem;color:#aaa;}
+    img{max-width:100%;height:auto;}
+  </style>
+</head>
+<body>
 
-<!-- GA4 + Consent Mode v2 (sustituye G-XXXXXXXXXX por tu ID real) -->
-<script>
-  (function() {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'granted',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied'
-    });
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = "https://www.googletagmanager.com/gtag/js?id=GTM-T343ZWN9";
-    document.head.appendChild(s);
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', 'GTM-T343ZWN9');
-  })();
-</script>
-</head><!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T343ZWN9');</script>
-<!-- End Google Tag Manager -->
-<body><!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T343ZWN9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <header>
   <h1>TCDS-Σ — Business Plan & Dossier</h1>
-  <p class="small">Autor: Genaro Carrasco Ozuna · ORCID: 0009-0005-6358-9910 · <a href="mailto:geozunac3536@gmail.com">geozunac3536@gmail.com</a></p>
-  <a href="https://doi.org/10.5281/zenodo.17494368"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17494368.svg" alt="DOI"></a>
+  <p style="text-align:center">
+    Autor: Genaro Carrasco Ozuna · ORCID:
+    <a href="https://orcid.org/0009-0005-6358-9910" target="_blank">0009-0005-6358-9910</a><br>
+    DOI: <a href="https://doi.org/10.5281/zenodo.17494368" target="_blank">10.5281/zenodo.17494368</a>
+  </p>
 </header>
 
 <main>
-  <section class="grid" aria-label="Acciones">
+  <section class="grid">
     <div class="card">
-      <h2>Apoyar ahora (Flujo B)</h2>
-      <p>Apoyo inmediato 100% al autor para sostener el proyecto.</p>
-      <a class="btn" href="https://ko-fi.com/" rel="noopener" target="_blank" onclick="analyticsDonation()">Aportar</a>
+      <h2>💠 Flujo A (I+D)</h2>
+      <p>Licencias TCDS-Σ Open Lab v1.0 y hardware ΣFET. Inversión en investigación y desarrollo auditable.</p>
+      <a class="btn" href="#contact">Solicitar licencia</a>
     </div>
+
     <div class="card">
-      <h2>Comprar Licencia (Flujo A)</h2>
-      <p>TCDS-Σ Open Lab License v1.0 (IND/CORP). Preserva la reproducibilidad.</p>
-      <a class="btn" href="#contact" onclick="analyticsLicense()">Solicitar</a>
+      <h2>💠 Flujo B (Apoyo decoroso)</h2>
+      <p>Donaciones directas al autor para sostener el proyecto sin intermediarios.</p>
+      <a class="btn" href="https://ko-fi.com/genarocarrasco" target="_blank">Apoyar ahora</a>
     </div>
+
     <div class="card">
-      <h2>Comprar Dev-Kit ΣFET</h2>
-      <p>Coherencímetro (PMV 2028). Reserva y lista de espera.</p>
-      <a class="btn" href="#contact" onclick="analyticsHardware()">Reservar</a>
+      <h2>📘 Documentos</h2>
+      <ul>
+        <li><a href="docs/Conciencia_operativa.pdf" target="_blank">Conciencia Operativa (PDF)</a></li>
+        <li><a href="docs/dossier_conciencia_tcds.tex" target="_blank">Fuente LaTeX reproducible</a></li>
+        <li><a href="docs/DECLARACION_AUTONOMIA.pdf" target="_blank">Declaración de Autonomía</a></li>
+      </ul>
     </div>
   </section>
 
   <section>
-    <h2>Transparencia y trazabilidad</h2>
+    <h2>📈 Indicadores Σ-Metrics</h2>
     <ul>
-      <li>Ledger público de ingresos/donaciones.</li>
-      <li>GA4 + Web Vitals para medir la experiencia real.</li>
-      <li>Licencia dual con cláusula de reproducibilidad.</li>
+      <li>Índice de Locking (LI) ≥ 0.90</li>
+      <li>Correlación R > 0.95</li>
+      <li>RMSE_SL < 0.10</li>
+      <li>Reproducibilidad ≥ 95 %</li>
     </ul>
   </section>
 
   <section id="contact">
-    <h2>Contacto</h2>
-    <p>Escríbeme: <a href="mailto:geozunac3536@gmail.com">geozunac3536@gmail.com</a></p>
+    <h2>📬 Contacto</h2>
+    <p>Consultas o licencias comerciales: <a href="mailto:geozunac3536@gmail.com">geozunac3536@gmail.com</a></p>
   </section>
 </main>
 
 <footer>
-  <p class="small">© 2025 Genaro Carrasco Ozuna. Dual-License: CC BY-NC-SA 4.0 + TCDS Σ Open Lab License v1.0</p>
+  <p>© 2025 Genaro Carrasco Ozuna — Licencia dual (CC BY-NC-SA 4.0 / TCDS Σ Open Lab License v1.0)</p>
+  <p>
+    <a href="https://doi.org/10.5281/zenodo.17494368" target="_blank">DOI</a> | 
+    <a href="https://ko-fi.com/genarocarrasco" target="_blank">Ko-fi</a> | 
+    <a href="https://geozunac3536-jpg.github.io/TCDS_Gradiente_Economico/" target="_blank">Proyecto complementario</a>
+  </p>
 </footer>
 
-<script defer src="analytics.js"></script>
-<noscript>Activa JavaScript para medición de experiencia (Web Vitals).</noscript>
 </body>
 </html>
