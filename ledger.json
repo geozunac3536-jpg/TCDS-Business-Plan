@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-11-07T18:20:10Z",
+    "tx_id": "don_0001",
+    "type": "Donation",
+    "source": "Ko-fi",
+    "amount_usd": 50.0,
+    "beneficiary": "Genaro Carrasco Ozuna",
+    "distribution": {
+      "personal_support": 50.0
+    },
+    "receipt_hash": "receipts/don_0001.json"
+  }
+]
