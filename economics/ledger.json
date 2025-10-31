@@ -4,11 +4,9 @@
     "tx_id": "don_0001",
     "type": "Donation",
     "source": "Ko-fi",
-    "amount_usd": 50.0,
+    "amount_usd": 20.00,
     "beneficiary": "Genaro Carrasco Ozuna",
-    "distribution": {
-      "personal_support": 50.0
-    },
+    "distribution": { "personal_support": 20.00 },
     "receipt_hash": "receipts/don_0001.json"
   }
 ]
