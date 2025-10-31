@@ -1,12 +1,10 @@
-[
-  {
-    "timestamp": "2025-11-07T18:20:10Z",
-    "tx_id": "don_0001",
-    "type": "Donation",
-    "source": "Ko-fi",
-    "amount_usd": 20.00,
-    "beneficiary": "Genaro Carrasco Ozuna",
-    "distribution": { "personal_support": 20.00 },
-    "receipt_hash": "receipts/don_0001.json"
-  }
-]
+{
+  "timestamp": "2025-10-31T23:59:00Z",
+  "tx_id": "kofi_0001",
+  "type": "Donation",
+  "source": "Ko-fi",
+  "amount_usd": 5.00,
+  "beneficiary": "Genaro Carrasco Ozuna",
+  "distribution": { "personal_support": 5.00 },
+  "receipt_hash": "receipts/kofi_0001.json"
+}
