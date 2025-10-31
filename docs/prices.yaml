@@ -1,0 +1,21 @@
+version: 1.0
+last_updated: "2025-10-30T00:00:00Z"
+licenses:
+  - id: "TCDS-OL-IND"
+    name: "Licencia Comercial (Individual/Startup < 5)"
+    price_usd: 1000.00
+    term: "perpetual"
+  - id: "TCDS-OL-CORP"
+    name: "Licencia Comercial (Corporativa)"
+    price_usd: 30000.00
+    term: "annual"
+hardware:
+  - id: "SFET-DEV-KIT-V1"
+    name: "ΣFET/Coherencímetro (Developer Kit v1.0)"
+    price_usd: 5000.00
+    availability: "Q1-2028"
+software:
+  - id: "CSL-IA-PRO"
+    name: "CSL-IA Platform (Pro License)"
+    price_usd: 1000.00
+    term: "annual"
