@@ -1,0 +1,16 @@
+name: Monthly Financial Report
+on:
+  schedule:
+    - cron: '0 12 1 * *'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate Monthly PDF (placeholder)
+        run: |
+          echo "Generate financial report from economics/ledger.json"
+      - name: Upload to Zenodo (placeholder)
+        run: |
+          echo "Call Zenodo API to upload the report"
