@@ -22,3 +22,4 @@ Este paquete incluye:
 - Botón **Comprar Dev-Kit ΣFET**: lanza `hardware_purchase`.
 
 Contacto: **Genaro Carrasco Ozuna** · ORCID 0009-0005-6358-9910 · <geozunac3536@gmail.com>
+📘 Dossier científico: [Conciencia_operativa.pdf](./Conciencia_operativa.pdf)
