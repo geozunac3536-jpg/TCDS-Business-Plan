@@ -1,8 +1,67 @@
 {
-  "title": "TCDS-Σ Business Plan & Dossier (Dual License, GA4, Web Vitals)",
-  "creators": [{"name": "Genaro Carrasco Ozuna", "orcid": "https://orcid.org/0009-0005-6358-9910"}],
-  "description": "Plan TCDS-Σ con licencia dual, flujo honesto + decoroso, GA4 + Consent Mode, Web Vitals y contabilidad pública.",
+  "title": "TCDS-Σ — Business Plan & Dossier (Canon Económico y Científico 2025–2030)",
+  "upload_type": "publication",
+  "publication_type": "report",
+  "creators": [
+    {
+      "name": "Carrasco Ozuna, Genaro",
+      "affiliation": "Proyecto TCDS — Canon Paradigmático",
+      "orcid": "https://orcid.org/0009-0005-6358-9910"
+    }
+  ],
+  "description": "Dossier y plan de negocios técnico-científico del proyecto TCDS-Σ: licenciamiento dual (CC BY-NC-SA 4.0 / TCDS Σ Open Lab), flujo económico honesto/decoroso, KPIs y trazabilidad auditable (ledger). Incluye versión LaTeX reproducible y documentación de la capa de conciencia operativa.",
+  "keywords": [
+    "TCDS",
+    "Business Plan",
+    "Open Science",
+    "Open Economy",
+    "ΣFET",
+    "CSL-IA",
+    "Σ-metrics",
+    "Reproducibilidad"
+  ],
+  "language": "spa",
   "license": "CC-BY-NC-SA-4.0",
-  "keywords": ["TCDS", "ΣFET", "CSL-IA", "Coherence", "Business Plan", "Web Vitals"],
-  "upload_type": "publication"
+  "access_right": "open",
+  "doi": "10.5281/zenodo.17494368",
+  "version": "v1.0.0",
+  "publication_date": "2025-10-31",
+  "related_identifiers": [
+    {
+      "relation": "isPartOf",
+      "identifier": "https://geozunac3536-jpg.github.io/TCDS-Business-Plan/",
+      "resource_type": "dataset",
+      "scheme": "url"
+    },
+    {
+      "relation": "isSupplementedBy",
+      "identifier": "10.5281/zenodo.17491112",
+      "resource_type": "publication",
+      "scheme": "doi"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "GPT-5 Σ-Trace",
+      "type": "DataCurator",
+      "affiliation": "Motor de Formalización IA — Proyecto TCDS"
+    }
+  ],
+  "notes": "Licencia dual: CC BY-NC-SA 4.0 + TCDS Σ Open Lab. Flujo B (Ko-fi/PayPal) para apoyo inmediato; Flujo A (licencias IND/CORP) con trazabilidad en economics/ledger.json.",
+  "subjects": [
+    "Física teórica aplicada",
+    "Economía científica abierta",
+    "Ingeniería paradigmática",
+    "Gestión de I+D"
+  ],
+  "alternate_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://geozunac3536-jpg.github.io/TCDS-Business-Plan/"
+    },
+    {
+      "scheme": "github",
+      "identifier": "https://github.com/geozunac3536-jpg/TCDS-Business-Plan"
+    }
+  ]
 }
