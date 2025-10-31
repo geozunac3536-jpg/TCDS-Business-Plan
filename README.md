@@ -23,3 +23,4 @@ Este paquete incluye:
 
 Contacto: **Genaro Carrasco Ozuna** · ORCID 0009-0005-6358-9910 · <geozunac3536@gmail.com>
 📘 Dossier científico: [Conciencia_operativa.pdf](./Conciencia_operativa.pdf)
+📊 Plan de Negocios Global TCDS-Σ 2026–2030 — [descargar](./docs/PROYECTO%20TCDS%20IA_2025-10-30_193913_251030_193928.pdf)
