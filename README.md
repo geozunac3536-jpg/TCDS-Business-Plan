@@ -1,4 +1,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17494368.svg)(https://doi.org/10.5281/zenodo.17494368)
+# 🌐 TCDS-Σ — Business Plan & Dossier
+Repositorio maestro del **Canon Económico y Científico 2025–2030** del proyecto TCDS-Σ.  
+Licencia dual: CC BY-NC-SA 4.0 + TCDS Σ Open Lab License v1.0  
+Autor: **Genaro Carrasco Ozuna** · [ORCID 0009-0005-6358-9910](https://orcid.org/0009-0005-6358-9910)
 # TCDS-Σ — Business Plan & Dossier (Dual License + GA4)
 
 Este paquete incluye:
