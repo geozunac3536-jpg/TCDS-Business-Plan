@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCDS-Σ — Business Plan & Dossier</title>
+<meta name="description" content="Plan de negocios técnico-científico TCDS-Σ con licencia dual, flujo honesto y capa económica decorosa.">
+<link rel="canonical" href="https://geozunac3536-jpg.github.io/TCDS-BUSINESS-PLAN/">
+<meta property="og:title" content="TCDS-Σ — Business Plan & Dossier">
+<meta property="og:description" content="Licencia dual, flujo honesto, GA4+Consent Mode, Web Vitals a GA.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://geozunac3536-jpg.github.io/TCDS-BUSINESS-PLAN/">
+<meta name="theme-color" content="#ffffff">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif; line-height:1.5; }
+  header, main, footer { max-width: 840px; margin: auto; padding: 1rem; }
+  header h1 { font-size: clamp(1.5rem, 4vw, 2.2rem); }
+  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
+  .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; }
+  button, a.btn { display:inline-block; padding:.8rem 1rem; border-radius:10px; text-decoration:none; border:1px solid #111; }
+  .small { font-size:.9rem; opacity:.8; }
+  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+  img { max-width:100%; height:auto; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"TCDS-Σ Project",
+  "url":"https://geozunac3536-jpg.github.io/TCDS-BUSINESS-PLAN/",
+  "email":"geozunac3536@gmail.com",
+  "founder":{"@type":"Person","name":"Genaro Carrasco Ozuna","identifier":"https://orcid.org/0009-0005-6358-9910"},
+  "sameAs":[ "https://orcid.org/0009-0005-6358-9910" ]
+}
+</script>
+
+<!-- GA4 + Consent Mode v2 -->
+<script>
+  (function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'granted',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX";
+    document.head.appendChild(s);
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  })();
+</script>
+</head>
+<body>
+<header>
+  <h1>TCDS-Σ — Business Plan & Dossier</h1>
+  <p class="small">Autor: Genaro Carrasco Ozuna · ORCID: 0009-0005-6358-9910 · <a href="mailto:geozunac3536@gmail.com">geozunac3536@gmail.com</a></p>
+</header>
+
+<main>
+  <section class="grid" aria-label="Acciones">
+    <div class="card">
+      <h2>Apoyar ahora (Flujo B)</h2>
+      <p>Apoyo inmediato 100% al autor para sostener el proyecto.</p>
+      <a class="btn" href="https://ko-fi.com/" rel="noopener" target="_blank" onclick="analyticsDonation()">Aportar</a>
+    </div>
+    <div class="card">
+      <h2>Comprar Licencia (Flujo A)</h2>
+      <p>TCDS-Σ Open Lab License v1.0 (IND/CORP). Preserva la reproducibilidad.</p>
+      <a class="btn" href="#contact" onclick="analyticsLicense()">Solicitar</a>
+    </div>
+    <div class="card">
+      <h2>Comprar Dev‑Kit ΣFET</h2>
+      <p>Coherencímetro (PMV 2028). Reserva y lista de espera.</p>
+      <a class="btn" href="#contact" onclick="analyticsHardware()">Reservar</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Transparencia y trazabilidad</h2>
+    <ul>
+      <li>Ledger público de ingresos/donaciones.</li>
+      <li>GA4 + Web Vitals para medir la experiencia real.</li>
+      <li>Licencia dual con cláusula de reproducibilidad.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Escríbeme: <a href="mailto:geozunac3536@gmail.com">geozunac3536@gmail.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <p class="small">© 2025 Genaro Carrasco Ozuna. Dual-License: CC BY-NC-SA 4.0 + TCDS Σ Open Lab License v1.0</p>
+</footer>
+
+<script defer src="analytics.js"></script>
+<noscript>Activa JavaScript para medición de experiencia (Web Vitals).</noscript>
+</body>
+</html>
