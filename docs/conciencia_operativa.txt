@@ -1,0 +1,155 @@
+% ==========================================================
+% TCDS-Σ — Plan de Negocios & Dossier Institucional
+% Fuente LaTeX reproducible (v1.0)
+% ==========================================================
+\documentclass[12pt,letterpaper]{article}
+
+% --- Paquetes mínimos y robustos ---
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array,longtable}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  urlcolor=blue!60!black,
+  citecolor=blue!60!black,
+  pdftitle={TCDS-Σ — Plan de Negocios & Dossier},
+  pdfauthor={Genaro Carrasco Ozuna}
+}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,labelsep=0.5em}
+
+% --- Macros útiles ---
+\newcommand{\repoURL}{https://geozunac3536-jpg.github.io/TCDS-Business-Plan/}
+\newcommand{\doiRepo}{10.5281/zenodo.17494368}
+\newcommand{\doiConc}{10.5281/zenodo.17498171}
+\newcommand{\orcid}{0009-0005-6358-9910}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{TCDS-Σ — Plan de Negocios \& Dossier Institucional}}\\[4pt]
+{\large Versión 1.0 \quad|\quad \today}\\[6pt]
+Repositorio DOI: \href{https://doi.org/\doiRepo}{\doiRepo} \quad|\quad
+Conciencia Operativa DOI: \href{https://doi.org/\doiConc}{\doiConc}\\[2pt]
+Autor: Genaro Carrasco Ozuna \quad|\quad ORCID: \href{https://orcid.org/\orcid}{\orcid}\\[2pt]
+Sitio: \href{\repoURL}{\repoURL}
+\end{center}
+
+\hrule\vspace{0.8em}
+
+\section*{Resumen}
+Este dossier consolida la cara institucional del proyecto TCDS-Σ: marco de gobernanza, licenciamiento dual y trazabilidad económica. Integra el documento \emph{Conciencia Operativa} (control retroalimentado \(Q_{\mathrm{ctrl}}\), CSL–IA y métricas \(\Sigma\)-metrics) como pieza central para la reproducibilidad y la evaluación binaria de resultados. El objetivo práctico es ofrecer a revisores y clientes un expediente auditable que conecte teoría, banco experimental y flujo económico legítimo.
+
+\section{Identidad y referencias}
+\begin{itemize}
+  \item \textbf{Repositorio público:} \href{\repoURL}{\repoURL}
+  \item \textbf{DOI del repositorio:} \href{https://doi.org/\doiRepo}{\doiRepo}
+  \item \textbf{DOI Conciencia Operativa:} \href{https://doi.org/\doiConc}{\doiConc}
+  \item \textbf{Autor y ORCID:} Genaro Carrasco Ozuna, \href{https://orcid.org/\orcid}{\orcid}
+  \item \textbf{Contacto:} \href{mailto:geozunac3536@gmail.com}{geozunac3536@gmail.com}
+\end{itemize}
+
+\section{Propósito institucional}
+Servir de preámbulo verificable para convenios con laboratorios, universidades y socios industriales. El repositorio fija:
+\begin{enumerate}
+  \item \emph{Falsabilidad estricta:} veredictos binarios con umbrales numéricos.
+  \item \emph{Trazabilidad documental:} DOI, versiones y \texttt{.zenodo.json}.
+  \item \emph{Licenciamiento dual:} ciencia abierta + uso industrial con trazabilidad.
+\end{enumerate}
+
+\section{Estructura canónica del repositorio (paquete de 10 elementos)}
+Tabla de referencia; asegure que las rutas existan exactamente como se listan.
+
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{1.2cm}p{6.8cm}p{6.2cm}@{}}
+\toprule
+\textbf{\#} & \textbf{Ruta / Archivo} & \textbf{Descripción} \\ \midrule
+1 & \texttt{docs/Conciencia\_Operativa.pdf} & Dossier central: transición pre\(\rightarrow\)post ( \(Q_{\mathrm{ctrl}}\), CSL–IA, KPIs, IIC\(^+\) ). \\
+2 & \texttt{docs/dossier\_conciencia\_tcds.tex} & Fuente LaTeX auditable; este documento. \\
+3 & \texttt{docs/DECLARACION\_AUTONOMIA.pdf} & Declaración jurídica de autonomía y derechos. \\
+4 & \texttt{docs/TCDS\_Business\_Plan.pdf} & Plan 2025–2030: IRS-Σ, sostenibilidad y licencias. \\
+5 & \texttt{economics/ledger.json} & Registro auditable de ingresos/egresos. \\
+6 & \texttt{economics/prices.yaml} & Tarifario público de licencias (Open Lab, ΣFET). \\
+7 & \texttt{legal/Licencia\_SigmaFET\_OpenLab\_1.1.pdf} & Condiciones de uso industrial con trazabilidad. \\
+8 & \texttt{meta/schema.jsonld} & Metadatos JSON-LD (DOIs, autoría, licencias, keywords). \\
+9 & \texttt{index.html} & Página institucional con GA4 y Consent Mode v2. \\
+10 & \texttt{.zenodo.json} & Metadatos de sincronización Zenodo (controlados por versión). \\
+\bottomrule
+\end{longtable}
+
+\section{Licencias}
+\begin{itemize}
+  \item \textbf{Ciencia y documentación:} Creative Commons \textbf{CC BY-NC-SA 4.0}. 
+  \item \textbf{Aplicaciones derivadas y hardware:} \emph{TCDS Σ Open Lab License v1.1}.\\
+  En el sitio: \texttt{legal/Licencia\_SigmaFET\_OpenLab\_1.1.pdf}.
+\end{itemize}
+
+\section{\texorpdfstring{\(\Sigma\)-metrics}{Sigma-metrics} y criterios de aceptación}
+Umbrales de validez para banco y análisis:
+\[
+\mathrm{LI}\ge 0.90,\quad R>0.95,\quad \mathrm{RMSE}_{\mathrm{SL}}<0.10,\quad \text{reproducibilidad}\ge 95\%.
+\]
+Firmas operativas: lenguas de Arnold con ensanchamiento \(\Delta f(A_c)\) monótono; locking \(p{:}q\) estable.
+
+\section{Automatización (resumen operativo)}
+\subsection*{Workflow mensual}
+Archivo: \texttt{.github/workflows/monthly-financial-report.yml}.\\
+Disparos: \texttt{schedule} mensual (UTC) y \texttt{workflow\_dispatch}.\\
+Salidas: artefacto PDF o TXT en \texttt{reports/}. Integración opcional con Zenodo mediante \emph{secrets} (\texttt{ZENODO\_TOKEN}, \texttt{ZENODO\_DEPOSITION\_ID}).
+
+\subsection*{Rúbrica de verificación rápida}
+\begin{enumerate}
+  \item Directorio correcto: \texttt{.github/workflows/}. 
+  \item Rama por defecto: el cron se ejecuta en \emph{main}. 
+  \item Archivo requerido: \texttt{economics/ledger.json} presente. 
+  \item Artefacto: \texttt{reports/*} publicado al correr el job.
+\end{enumerate}
+
+\section{Metadatos y citación}
+\subsection*{JSON-LD (extracto recomendado)}
+\begin{verbatim}
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "TCDS-Σ — Business Plan & Dossier (Canon 2025–2030)",
+  "url": "https://geozunac3536-jpg.github.io/TCDS-Business-Plan/",
+  "identifier": {"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.17494368"},
+  "creator": {"@type":"Person","name":"Genaro Carrasco Ozuna","identifier":"https://orcid.org/0009-0005-6358-9910"},
+  "license": [
+    "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "https://geozunac3536-jpg.github.io/TCDS-Business-Plan/LICENSE_COMMERCIAL.md"
+  ],
+  "hasPart": [{
+    "@type":"CreativeWork",
+    "name":"Conciencia Operativa en TCDS",
+    "identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.17498171"}
+  }]
+}
+\end{verbatim}
+
+\subsection*{Cita sugerida}
+Carrasco Ozuna, G. (2025). \emph{TCDS-Σ — Plan de Negocios y Dossier (Canon Económico y Científico 2025–2030)}. Zenodo. \href{https://doi.org/\doiRepo}{https://doi.org/\doiRepo}.
+
+\section{Checklist de coherencia}
+\begin{enumerate}
+  \item \textbf{Archivos coinciden con el índice de 10 elementos.}
+  \item \textbf{Enlaces} en \texttt{index.html} devuelven 200~OK en GitHub Pages.
+  \item \textbf{JSON-LD} y \texttt{.zenodo.json} contienen el DOI \doiRepo\ y refieren \doiConc\ como \texttt{hasPart}/\texttt{related\_identifiers}.
+  \item \textbf{Workflow} visible en pestaña \emph{Actions} y ejecutable con \emph{Run workflow}.
+  \item \textbf{Licencias} accesibles: CC BY-NC-SA 4.0 y \emph{Open Lab v1.1}.
+\end{enumerate}
+
+\section{Autocrítica y trazabilidad}
+El documento se limita a dependencias LaTeX estándar y evita figuras externas para asegurar compilación en cualquier entorno. Las rutas declaradas corresponden al índice pactado; cualquier modificación de nombres o mayúsculas romperá enlaces en GitHub Pages. La sección de automatización está acotada a un flujo reproducible con artefacto tangible y \emph{secrets} opcionales para Zenodo.
+
+\vspace{1em}\hrule
+\small
+\noindent \textbf{Derechos y licencias.} Ciencia y documentación bajo CC BY-NC-SA 4.0. Aplicaciones derivadas y hardware bajo TCDS Σ Open Lab License v1.1. \\
+\noindent \textbf{Contacto.} \href{mailto:geozunac3536@gmail.com}{geozunac3536@gmail.com} \quad|\quad ORCID: \href{https://orcid.org/\orcid}{\orcid}.
+
+\end{document}
