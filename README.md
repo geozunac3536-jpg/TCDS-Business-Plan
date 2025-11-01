@@ -1,5 +1,27 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17494368.svg)](https://doi.org/10.5281/zenodo.17494368)
+## 🏛️ TCDS — Business Plan · Dossier Institucional
 
+Este repositorio contiene el marco de gobernanza, licenciamiento y estrategia de transferencia tecnológica 
+del proyecto TCDS. 
+Incluye el documento **Conciencia Operativa en TCDS (DOI: 10.5281/zenodo.17498171)**, 
+que formaliza el paso del marco teórico a un sistema operativo reproducible 
+mediante el controlador Qctrl y las métricas Σ-metrics (LI, R, RMSE_SL, κΣ).
+
+### Propósito
+Servir como preámbulo de revisión institucional y punto de partida para acuerdos con laboratorios, 
+universidades y socios industriales bajo licenciamiento Open Lab 1.1 + ΣFET License.
+
+### Licencias
+- **Ciencia y documentación:** CC BY-NC-SA 4.0  
+- **Aplicaciones derivadas y hardware:** Licencia ΣFET Open Lab 1.1  
+- **Repositorio DOI:** [https://doi.org/10.5281/zenodo.17498171](https://doi.org/10.5281/zenodo.17498171)
+
+### Garantías
+Trazabilidad total (DOI, hash, fecha, autoría verificada), falsabilidad binaria, y coherencia institucional 
+mediante métricas IIC⁺.
+
+---
+© 2025 Proyecto TCDS · Todos los derechos morales reservados.
 # 🌐 TCDS-Σ — Business Plan & Dossier
 
 Repositorio maestro del **Canon Económico y Científico 2025–2030** del proyecto **TCDS-Σ**.  
