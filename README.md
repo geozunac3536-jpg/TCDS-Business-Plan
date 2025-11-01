@@ -1,4 +1,5 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17494368.svg)](https://doi.org/10.5281/zenodo.17494368)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17498171.svg)](https://doi.org/10.5281/zenodo.17498171)
 ## 🏛️ TCDS — Business Plan · Dossier Institucional
 
 Este repositorio contiene el marco de gobernanza, licenciamiento y estrategia de transferencia tecnológica 
