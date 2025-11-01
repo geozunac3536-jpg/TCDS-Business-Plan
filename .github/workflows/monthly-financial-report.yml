@@ -1,0 +1,144 @@
+name: Monthly Financial Report
+
+on:
+  schedule:
+    # Corre el 1 de cada mes a las 12:00 UTC
+    - cron: '0 12 1 * *'
+  workflow_dispatch: {}  # permite ejecutarlo a mano
+
+# Asegúrate de tenerlo en la rama por defecto (ej. main)
+# Settings → Actions: habilitado para este repo
+
+permissions:
+  contents: read
+
+concurrency:
+  group: monthly-financial-report
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Verificar archivos base
+        run: |
+          test -f economics/ledger.json || { echo "economics/ledger.json no existe"; exit 1; }
+          mkdir -p reports
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install reportlab
+
+      - name: Generar PDF mensual
+        id: genpdf
+        run: |
+          python - << 'PY'
+          import json, datetime, os
+          from reportlab.lib.pagesizes import A4
+          from reportlab.pdfgen import canvas
+          from reportlab.lib.units import cm
+
+          with open("economics/ledger.json","r",encoding="utf-8") as f:
+            ledger = json.load(f)
+
+          now = datetime.datetime.utcnow()
+          y,m = now.year, now.month
+          out_path = f"reports/financial_report_{y}-{m:02d}.pdf"
+
+          c = canvas.Canvas(out_path, pagesize=A4)
+          w,h = A4
+          c.setTitle(f"Monthly Financial Report {y}-{m:02d}")
+          c.setFont("Helvetica-Bold", 14)
+          c.drawString(2*cm, h-2*cm, f"TCDS-Σ — Monthly Financial Report {y}-{m:02d} (UTC)")
+          c.setFont("Helvetica", 10)
+          c.drawString(2*cm, h-3*cm, f"Generated: {now.isoformat()}Z")
+
+          ycursor = h-4*cm
+          total_in = 0.0
+          total_out = 0.0
+          c.setFont("Helvetica-Bold", 11)
+          c.drawString(2*cm, ycursor, "Resumen")
+          ycursor -= 0.7*cm
+          c.setFont("Helvetica", 10)
+
+          # Ledger esperado: lista de items {date, concept, amount, currency, type: in/out}
+          for item in ledger if isinstance(ledger, list) else ledger.get("items", []):
+            date = item.get("date","?")
+            concept = item.get("concept","?")
+            amt = float(item.get("amount",0))
+            typ = item.get("type","?")
+            if typ == "in": total_in += amt
+            if typ == "out": total_out += amt
+
+          c.drawString(2*cm, ycursor, f"Ingresos totales: {total_in:.2f}")
+          ycursor -= 0.5*cm
+          c.drawString(2*cm, ycursor, f"Egresos totales:  {total_out:.2f}")
+          ycursor -= 0.5*cm
+          c.drawString(2*cm, ycursor, f"Balance:          {total_in - total_out:.2f}")
+          ycursor -= 1.0*cm
+
+          c.setFont("Helvetica-Bold", 11)
+          c.drawString(2*cm, ycursor, "Detalle")
+          ycursor -= 0.7*cm
+          c.setFont("Helvetica", 9)
+
+          items = ledger if isinstance(ledger, list) else ledger.get("items", [])
+          for item in items:
+            line = f"{item.get('date','?')} | {item.get('type','?'):>3} | {item.get('currency','')}{item.get('amount',0)} | {item.get('concept','')}"
+            c.drawString(2*cm, ycursor, line[:110])
+            ycursor -= 0.45*cm
+            if ycursor < 2*cm:
+              c.showPage()
+              ycursor = h-2*cm
+              c.setFont("Helvetica", 9)
+
+          c.showPage()
+          c.save()
+
+          print(f"PDF={out_path}")
+          PY
+
+      - name: Publicar artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: monthly-report
+          path: reports/*.pdf
+          if-no-files-found: error
+          retention-days: 30
+
+      # ==== Subida opcional a Zenodo ====
+      # Requiere:
+      #   - Secret ZENODO_TOKEN (Settings → Secrets → Actions)
+      #   - Secret ZENODO_DEPOSITION_ID (ID del depósito donde subir nueva versión)
+      #   - Si usas sandbox: ZENODO_API=https://sandbox.zenodo.org/api
+      - name: Upload to Zenodo (optional)
+        if: ${{ secrets.ZENODO_TOKEN && secrets.ZENODO_DEPOSITION_ID }}
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+          ZENODO_DEPOSITION_ID: ${{ secrets.ZENODO_DEPOSITION_ID }}
+          ZENODO_API: ${{ secrets.ZENODO_API || 'https://zenodo.org/api' }}
+        run: |
+          FILE_PATH=$(ls reports/*.pdf | head -n1)
+          echo "Subiendo $FILE_PATH a Zenodo deposition $ZENODO_DEPOSITION_ID ..."
+          # 1) Subir el archivo al bucket del depósito
+          BUCKET_URL=$(curl -s -H "Authorization: Bearer $ZENODO_TOKEN" \
+            "$ZENODO_API/deposit/depositions/$ZENODO_DEPOSITION_ID" | jq -r '.links.bucket')
+          curl --fail -H "Authorization: Bearer $ZENODO_TOKEN" \
+               -H "Content-Type: application/pdf" \
+               --upload-file "$FILE_PATH" \
+               "$BUCKET_URL/$(basename "$FILE_PATH")"
+          # 2) (Opcional) Publicar la nueva versión
+          # curl -s -X POST -H "Authorization: Bearer $ZENODO_TOKEN" \
+          #      "$ZENODO_API/deposit/depositions/$ZENODO_DEPOSITION_ID/actions/publish"
