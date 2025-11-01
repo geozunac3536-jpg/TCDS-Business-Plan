@@ -1,42 +1,59 @@
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Proyecto TCDS-Σ — Plan de Negocios Técnico-Científico 2025–2030. Flujo económico honesto y reproducible.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="TCDS-Σ — Plan de Negocios y Dossier Institucional 2025–2030. Ciencia abierta + licenciamiento dual + trazabilidad económica." />
   <title>TCDS-Σ — Business Plan & Dossier</title>
-  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/166396935?s=200">
+  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/166396935?s=200" />
 
-  <!-- JSON-LD con DOI y metadatos -->
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="TCDS-Σ — Business Plan & Dossier" />
+  <meta property="og:description" content="Repositorio DOI 10.5281/zenodo.17494368 · Dossier de conciencia operativa, licenciamiento dual y auditoría económica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://geozunac3536-jpg.github.io/TCDS-Business-Plan/" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/166396935?s=400" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD principal del repositorio (Dataset con DOI) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Dataset",
-    "name": "TCDS-Σ — Business Plan & Dossier (Canon Económico y Científico 2025–2030)",
-    "url": "https://geozunac3536-jpg.github.io/TCDS-Business-Plan/",
-    "identifier": {
-      "@type": "PropertyValue",
-      "propertyID": "DOI",
-      "value": "10.5281/zenodo.17494368"
+    "@context":"https://schema.org",
+    "@type":"Dataset",
+    "name":"TCDS-Σ — Business Plan & Dossier (Canon Económico y Científico 2025–2030)",
+    "url":"https://geozunac3536-jpg.github.io/TCDS-Business-Plan/",
+    "identifier":{
+      "@type":"PropertyValue",
+      "propertyID":"DOI",
+      "value":"10.5281/zenodo.17494368"
     },
-    "license": [
+    "creator":{
+      "@type":"Person",
+      "name":"Genaro Carrasco Ozuna",
+      "email":"geozunac3536@gmail.com",
+      "identifier":"https://orcid.org/0009-0005-6358-9910",
+      "affiliation":{"@type":"Organization","name":"Proyecto TCDS-Σ"}
+    },
+    "publisher":{"@type":"Organization","name":"Zenodo / CERN OpenAIRE"},
+    "datePublished":"2025-10-31",
+    "license":[
       "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "https://geozunac3536-jpg.github.io/TCDS-Business-Plan/LICENSE_COMMERCIAL.md"
     ],
-    "creator": {
-      "@type": "Person",
-      "name": "Genaro Carrasco Ozuna",
-      "email": "geozunac3536@gmail.com",
-      "identifier": "https://orcid.org/0009-0005-6358-9910",
-      "affiliation": {"@type": "Organization","name": "Proyecto TCDS-Σ"}
-    },
-    "publisher": {"@type": "Organization","name": "Zenodo / CERN OpenAIRE"},
-    "datePublished": "2025-10-31",
-    "keywords": ["TCDS","ΣFET","CSL-IA","Coherencia Σ","Open Science","Open Economy","Business Plan","Web Vitals"],
-    "description": "Plan técnico-científico y económico del proyecto TCDS-Σ, con flujo dual honesto/decoroso, licenciamiento abierto y reproducibilidad completa."
+    "keywords":["TCDS","ΣFET","CSL-IA","Coherencia Σ","Open Science","Open Economy","Business Plan","Σ-metrics"],
+    "hasPart":[
+      {
+        "@type":"CreativeWork",
+        "name":"Conciencia Operativa en TCDS",
+        "identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.17498171"},
+        "url":"https://doi.org/10.5281/zenodo.17498171"
+      }
+    ],
+    "description":"Plan técnico-científico y económico del proyecto TCDS-Σ, con flujo dual, licenciamiento abierto y reproducibilidad completa."
   }
   </script>
 
-  <!-- GA4 + Consent Mode v2 -->
+  <!-- GA4 + Consent Mode v2 (sustituye G-XXXXXXXXXX por tu ID real) -->
   <script>
     (function(){
       window.dataLayer = window.dataLayer || [];
@@ -49,7 +66,7 @@
       });
       var s=document.createElement('script');
       s.async=true;
-      s.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"; /* Sustituir por tu ID real GA4 */
+      s.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX";
       document.head.appendChild(s);
       window.gtag=gtag;
       gtag('js',new Date());
@@ -58,77 +75,119 @@
   </script>
 
   <style>
-    :root {color-scheme: light dark;}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;line-height:1.5;background:#0b0b0b;color:#e0e0e0;}
-    header,main,footer{max-width:900px;margin:auto;padding:1rem;}
-    h1{color:#69d2e7;text-align:center;}
-    h2{color:#aee239;}
-    a{color:#76c7c0;text-decoration:none;}
-    a:hover{text-decoration:underline;}
-    .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
-    .card{background:#1a1a1a;border-radius:12px;padding:1rem;box-shadow:0 0 10px #000;}
-    button,a.btn{display:inline-block;padding:.8rem 1rem;border-radius:10px;text-decoration:none;border:1px solid #111;}
-    footer{text-align:center;margin-top:2rem;font-size:.9rem;color:#aaa;}
-    img{max-width:100%;height:auto;}
+    :root { color-scheme: light dark; }
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,sans-serif;line-height:1.6;background:#0b0b0b;color:#e6e6e6}
+    header,main,footer{max-width:1100px;margin:auto;padding:1rem}
+    h1{color:#69d2e7;text-align:center;margin:.5rem 0 0}
+    h2{color:#aee239;margin-top:1.6rem}
+    a{color:#76c7c0;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:#161616;border:1px solid #202020;border-radius:14px;padding:1rem;box-shadow:0 0 10px rgba(0,0,0,.4)}
+    .btn, .btn:visited{display:inline-block;padding:.7rem 1rem;border-radius:10px;border:1px solid #333;background:#111}
+    .muted{color:#aaa}
+    .badges{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;margin:.75rem 0 0}
+    ul.clean{margin:.25rem 0 0 1rem}
+    table{width:100%;border-collapse:collapse;margin-top:.5rem}
+    th,td{border-bottom:1px solid #222;padding:.6rem .5rem;text-align:left}
+    code{background:#111;padding:.15rem .35rem;border-radius:6px}
+    footer{text-align:center;margin-top:2rem;font-size:.92rem;color:#aaa}
+    .kpi{display:flex;gap:.6rem;flex-wrap:wrap}
+    .pill{background:#0f0f0f;border:1px solid #262626;border-radius:999px;padding:.35rem .65rem}
   </style>
 </head>
 <body>
 
 <header>
   <h1>TCDS-Σ — Business Plan & Dossier</h1>
-  <p style="text-align:center">
+  <p style="text-align:center" class="muted">
     Autor: Genaro Carrasco Ozuna · ORCID:
-    <a href="https://orcid.org/0009-0005-6358-9910" target="_blank">0009-0005-6358-9910</a><br>
-    DOI: <a href="https://doi.org/10.5281/zenodo.17494368" target="_blank">10.5281/zenodo.17494368</a>
+    <a href="https://orcid.org/0009-0005-6358-9910" target="_blank" rel="noopener">0009-0005-6358-9910</a><br />
+    Repositorio DOI: <a href="https://doi.org/10.5281/zenodo.17494368" target="_blank" rel="noopener">10.5281/zenodo.17494368</a> ·
+    Conciencia Operativa (DOI): <a href="https://doi.org/10.5281/zenodo.17498171" target="_blank" rel="noopener">10.5281/zenodo.17498171</a>
   </p>
+  <div class="badges">
+    <a href="https://doi.org/10.5281/zenodo.17494368" target="_blank" rel="noopener"><img alt="DOI badge" src="https://zenodo.org/badge/DOI/10.5281/zenodo.17494368.svg" /></a>
+    <a href="https://doi.org/10.5281/zenodo.17498171" target="_blank" rel="noopener"><img alt="DOI badge" src="https://zenodo.org/badge/DOI/10.5281/zenodo.17498171.svg" /></a>
+  </div>
 </header>
 
 <main>
-  <section class="grid">
+  <section class="grid" aria-label="Flujos económicos y documentos">
     <div class="card">
       <h2>💠 Flujo A (I+D)</h2>
-      <p>Licencias TCDS-Σ Open Lab v1.0 y hardware ΣFET. Inversión en investigación y desarrollo auditable.</p>
-      <a class="btn" href="#contact">Solicitar licencia</a>
+      <p>Licencias <strong>TCDS-Σ Open Lab v1.1</strong> y hardware ΣFET: inversión en investigación y desarrollo auditable.</p>
+      <a class="btn" href="#contacto">Solicitar licencia</a>
     </div>
 
     <div class="card">
       <h2>💠 Flujo B (Apoyo decoroso)</h2>
-      <p>Donaciones directas al autor para sostener el proyecto sin intermediarios.</p>
-      <a class="btn" href="https://ko-fi.com/genarocarrasco" target="_blank">Apoyar ahora</a>
+      <p>Donaciones directas para sostener el proyecto sin intermediarios.</p>
+      <a class="btn" href="https://ko-fi.com/genarocarrasco" target="_blank" rel="noopener">Apoyar ahora</a>
     </div>
 
     <div class="card">
       <h2>📘 Documentos</h2>
-      <ul>
-        <li><a href="docs/Conciencia_operativa.pdf" target="_blank">Conciencia Operativa (PDF)</a></li>
-        <li><a href="docs/dossier_conciencia_tcds.tex" target="_blank">Fuente LaTeX reproducible</a></li>
-        <li><a href="docs/DECLARACION_AUTONOMIA.pdf" target="_blank">Declaración de Autonomía</a></li>
+      <ul class="clean">
+        <li><a href="docs/Conciencia_operativa.pdf" target="_blank" rel="noopener">Conciencia Operativa (PDF)</a></li>
+        <li><a href="docs/dossier_conciencia_tcds.tex" target="_blank" rel="noopener">Fuente LaTeX reproducible</a></li>
+        <li><a href="docs/DECLARACION_AUTONOMIA.pdf" target="_blank" rel="noopener">Declaración de Autonomía</a></li>
+        <!-- Puedes añadir más docs si los publicas: TCDS_Business_Plan.pdf, etc. -->
       </ul>
     </div>
   </section>
 
   <section>
+    <h2>🗂️ Índice alineado al README (paquete de 10 elementos)</h2>
+    <table aria-label="Índice del repositorio">
+      <thead><tr><th>#</th><th>Ruta / Archivo</th><th>Descripción</th><th>Tipo</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><code>/docs/Conciencia_Operativa.pdf</code></td><td>Dossier central: pre→post conciencia (Qctrl, CSL–IA, KPIs, IIC⁺).</td><td>Científico/Auditoría</td></tr>
+        <tr><td>2</td><td><code>/docs/dossier_conciencia_tcds.tex</code></td><td>Fuente LaTeX auditable del dossier.</td><td>Fuente/Reproducibilidad</td></tr>
+        <tr><td>3</td><td><code>/docs/DECLARACION_AUTONOMIA.pdf</code></td><td>Declaración legal de autonomía y derechos.</td><td>Jurídico/PI</td></tr>
+        <tr><td>4</td><td><code>/docs/TCDS_Business_Plan.pdf</code></td><td>Documento rector del plan 2025–2030 (IRS-Σ, licenciamiento dual).</td><td>Estratégico/Económico</td></tr>
+        <tr><td>5</td><td><code>/economics/ledger.json</code></td><td>Registro auditable de flujos de licencias y donaciones.</td><td>Transparencia</td></tr>
+        <tr><td>6</td><td><code>/economics/prices.yaml</code></td><td>Catálogo de precios y licencias (Open Lab, ΣFET, sublicencias).</td><td>Comercial</td></tr>
+        <tr><td>7</td><td><code>/legal/Licencia_SigmaFET_OpenLab_1.1.pdf</code></td><td>Licencia dual (CC BY-NC-SA + ΣFET Open Lab 1.1).</td><td>Legal</td></tr>
+        <tr><td>8</td><td><code>/meta/schema.jsonld</code></td><td>Metadatos JSON-LD (DOI, autoría, licencia, palabras clave).</td><td>Indexación</td></tr>
+        <tr><td>9</td><td><code>/index.html</code></td><td>Página pública con GA4 y Modo de consentimiento v2.</td><td>Web/Difusión</td></tr>
+        <tr><td>10</td><td><code>/.zenodo.json</code></td><td>Metadatos para sincronización automática con Zenodo.</td><td>Automatización/DOI</td></tr>
+      </tbody>
+    </table>
+    <p class="muted">Nota: publica los archivos faltantes en estas rutas para que el índice quede 100% consistente.</p>
+  </section>
+
+  <section>
     <h2>📈 Indicadores Σ-Metrics</h2>
-    <ul>
-      <li>Índice de Locking (LI) ≥ 0.90</li>
-      <li>Correlación R > 0.95</li>
-      <li>RMSE_SL < 0.10</li>
-      <li>Reproducibilidad ≥ 95 %</li>
+    <div class="kpi" aria-label="KPIs Sigma">
+      <span class="pill">LI ≥ 0.90</span>
+      <span class="pill">R &gt; 0.95</span>
+      <span class="pill">RMSE_SL &lt; 0.10</span>
+      <span class="pill">Reproducibilidad ≥ 95 %</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>⚖️ Licencia dual</h2>
+    <ul class="clean">
+      <li>Ciencia y documentación: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
+      <li>Aplicaciones derivadas y hardware: <a href="LICENSE_COMMERCIAL.md" target="_blank" rel="noopener">TCDS Σ Open Lab License v1.1</a></li>
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contacto">
     <h2>📬 Contacto</h2>
-    <p>Consultas o licencias comerciales: <a href="mailto:geozunac3536@gmail.com">geozunac3536@gmail.com</a></p>
+    <p>Licencias comerciales o consultas institucionales: <a href="mailto:geozunac3536@gmail.com">geozunac3536@gmail.com</a></p>
   </section>
 </main>
 
 <footer>
-  <p>© 2025 Genaro Carrasco Ozuna — Licencia dual (CC BY-NC-SA 4.0 / TCDS Σ Open Lab License v1.0)</p>
+  <p>© 2025 Genaro Carrasco Ozuna — Licencia dual (CC BY-NC-SA 4.0 / TCDS Σ Open Lab License v1.1)</p>
   <p>
-    <a href="https://doi.org/10.5281/zenodo.17494368" target="_blank">DOI</a> | 
-    <a href="https://ko-fi.com/genarocarrasco" target="_blank">Ko-fi</a> | 
-    <a href="https://geozunac3536-jpg.github.io/TCDS_Gradiente_Economico/" target="_blank">Proyecto complementario</a>
+    <a href="https://doi.org/10.5281/zenodo.17494368" target="_blank" rel="noopener">DOI del repositorio</a> ·
+    <a href="https://doi.org/10.5281/zenodo.17498171" target="_blank" rel="noopener">Conciencia Operativa (DOI)</a> ·
+    <a href="https://ko-fi.com/genarocarrasco" target="_blank" rel="noopener">Ko-fi</a> ·
+    <a href="https://geozunac3536-jpg.github.io/TCDS_Gradiente_Economico/" target="_blank" rel="noopener">Proyecto complementario</a>
   </p>
 </footer>
 
