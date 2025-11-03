@@ -78,3 +78,4 @@ Zenodo. [https://doi.org/10.5281/zenodo.17494368](https://doi.org/10.5281/zenodo
 
 > Publicación validada mediante auditoría automática (`.github/workflows/audit.yml`)  
 > que certifica la coherencia estructural, trazabilidad económica y reproducibilidad científica del proyecto TCDS-Σ.
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/geozunac3536)
