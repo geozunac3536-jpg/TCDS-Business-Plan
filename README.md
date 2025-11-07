@@ -9,7 +9,7 @@ del proyecto TCDS.
 Incluye el documento **Conciencia Operativa en TCDS (DOI: 10.5281/zenodo.17498171)**, 
 que formaliza el paso del marco teórico a un sistema operativo reproducible 
 mediante el controlador Qctrl y las métricas Σ-metrics (LI, R, RMSE_SL, κΣ).
-
+Nodo central: https://geozunac3536-jpg.github.io/TCDS-Convergencia/
 ### Propósito
 Servir como preámbulo de revisión institucional y punto de partida para acuerdos con laboratorios, 
 universidades y socios industriales bajo licenciamiento Open Lab 1.1 + ΣFET License.
